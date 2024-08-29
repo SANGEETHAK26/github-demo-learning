@@ -115,17 +115,17 @@ console.log("result of err", errResult);
 //    console.log("Failed");
 //  }
 
-for (let i = 0; i <= 5; i++) {
-  console.log(i);
-}
+// for (let i = 0; i <= 5; i++) {
+//   console.log(i);
+// }
 
-let percentage = 30;
-if (percentage >= 90) {
-  console.log("Distinction");
-} else if (percentage >= 70) {
-  console.log("Good");
-} else if (percentage >= 40) {
-  console.log("Average");
-} else {
-  console.log("Failed");
-}
+// let percentage = 30;
+// if (percentage >= 90) {
+//   console.log("Distinction");
+// } else if (percentage >= 70) {
+//   console.log("Good");
+// } else if (percentage >= 40) {
+//   console.log("Average");
+// } else {
+//   console.log("Failed");
+// }
