@@ -97,3 +97,42 @@ const failure_result=performancelist
     },
 [0,0])
 console.log("failure_result",failure_result)
+
+const student_obj = {
+  name: "Sanjay",
+  getMyName() {
+    console.log(this);
+  },
+};
+
+student_obj.getMyName();
+
+console.log(arr);
+
+Array.prototype.zenMap = function (fn) {
+  let temp = [];
+  for (let i = 0; i < this.length; i++) {
+    temp.push(fn(this[i], i, this));
+  }
+  return temp;
+};
+
+const mapped = arr.map((val, index, acc_Arr) => {
+  console.log(`
+     Value : ${val} 
+     Index : ${index}
+     Acctual Arr : ${acc_Arr}
+    `);
+  return val * 3;
+});
+console.log("mapped", mapped);
+
+const zen_mapped = arr.zenMap((val, index, acc_Arr) => {
+  console.log(`
+    Value : ${val} 
+    Index : ${index}
+    Acctual Arr : ${acc_Arr}
+   `);
+  return val * 3;
+});
+console.log("zen mapped", zen_mapped);
